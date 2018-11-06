@@ -6,6 +6,7 @@
   var uglify = require("gulp-uglify"),
       rename = require("gulp-rename"),
       eslint = require("gulp-eslint");
+      babel = require('gulp-babel');
 
     
   var sass = require("gulp-sass"),
@@ -16,6 +17,7 @@
 
   gulp.task("script", function() {
     return gulp.src("./js/*.js") // What files do we want gulp to consume?
+      .pipe(babel())
       .pipe(eslint())
       .pipe(eslint.format())
       .pipe(uglify()) // Call the uglify function on these files
