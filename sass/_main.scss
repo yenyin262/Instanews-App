@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: "Open Sans";
+  font-family: $brand-font;
   font-size: 16px;
   color: #ffffff;
 }
@@ -9,15 +9,27 @@ body {
   flex-basis: 100%;
   flex-flow: column;
   justify-content: space-between;
+
+  @include tablet {
+    height: 500px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+  }
 }
 .logo-container {
   height: 277px;
   display: flex;
   justify-content: center;
-
   margin-top: 127px;
   margin-left: 3px;
   align-items: center;
+
+  @include tablet { 
+    height: 90%;
+    margin-left: 115px;
+    margin-top: 50px;
+  }
 }
 .logo {
   height: 226px;
@@ -27,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -48,20 +61,7 @@ body {
   text-align: center;
 }
 
-/* .section-list-container {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: center;
-    margin-bottom: 35px;
-} */
 
-/* .section-list-container select { 
-    border: solid white 2px;
-    width: 24%;
-    margin-bottom: 25px;
-} */
 
 .copyright-section {
   color: #c2c2c2;
@@ -76,19 +76,28 @@ body {
   left: 20%;
 }
 
-@media screen and (min-width: 600px) {
-  .main {
-    height: 500px;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: row;
-  }
+.instanews{ 
+  text-transform: uppercase;
+}
 
-  .logo-container {
-    height: 90%;
-    margin-left: 115px;
-    margin-top: 50px;
-  }
+.articleContents { 
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 600px) {
+//   .main {
+//     height: 500px;
+//     display: flex;
+//     flex-basis: 100%;
+//     flex-direction: row;
+//   }
+
+//   .logo-container {
+//     height: 90%;
+//     margin-left: 115px;
+//     margin-top: 50px;
+//   }
 
   .title-container {
     flex-direction: column;

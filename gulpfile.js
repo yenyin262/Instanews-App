@@ -3,10 +3,9 @@
   // Now that we've installed the uglify package we can require it:
   var browserSync = require('browser-sync').create();
 
-  var uglify = require("gulp-uglify"),
+  var terser = require("gulp-terser"),
       rename = require("gulp-rename"),
       eslint = require("gulp-eslint");
-      babel = require('gulp-babel');
 
     
   var sass = require("gulp-sass"),
@@ -17,10 +16,9 @@
 
   gulp.task("script", function() {
     return gulp.src("./js/*.js") // What files do we want gulp to consume?
-      .pipe(babel())
       .pipe(eslint())
       .pipe(eslint.format())
-      .pipe(uglify()) // Call the uglify function on these files
+      .pipe(terser()) // Call the uglify function on these files
       .pipe(rename({ extname: ".min.js" })) // Rename the uglified file
       .pipe(gulp.dest("./build/js")); // Where do we put the result?
   });
