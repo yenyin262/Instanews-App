@@ -23,8 +23,9 @@ $(function () {
             
                 if (value.multimedia.length === 5 && counter < 12) {
                     counter = counter + 1; 
-                    var imageUrl = value.multimedia[4].url;
-                    $('.sectionArticleContainer').append('<div class="articleContents" style="background-image: url('+ imageUrl +')"> <p class="articleTitle">' + value.title + '</p></div>');
+                    const imageUrl = value.multimedia[4].url;
+                    const articleNewsUrl = value.url;
+                    $('.sectionArticleContainer').append('<div class="articleContents" style="background-image: url('+ imageUrl +')"> <a id="link" href = ' + articleNewsUrl + '><p class="articleTitle">' + value.title + '</p></a></div>');
                     
                 }
           
