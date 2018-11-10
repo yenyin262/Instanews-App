@@ -1,6 +1,6 @@
 $(function () {
     
-    $('.section-container').on("change", function (event) { //to store the lists of articles in each match select section
+    $('.sectionContainer').on("change", function (event) { //to store the lists of articles in each match select section
         $('.sectionArticleContainer').empty();
         let news = [];
         let apiUrl = "https://api.nytimes.com/svc/topstories/v2/";
@@ -13,11 +13,11 @@ $(function () {
             url: url,
             method: 'GET',
         }).done(function (data) {
-            //console.log(data);
+           
             news = data.results;
-            //console.log(news);
             
-            $('.loadergif').hide();
+            
+            $('.loaderGif').hide();
             let counter = 0; 
             $.each(news,function(key,value) { 
             

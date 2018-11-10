@@ -5,7 +5,7 @@
 ####  Instruction:-  Open index.html on any internet browser to view the one page responsive website 
 
 
-# Summary:- 
+# Description:- 
 
 A one-page responsive news website allowing users to filter top news story categories via New York Times API.  It 
 accomodates to mobile and tablet devices using a Responsive Web Design approach allowing easy navigation across all devices.  

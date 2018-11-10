@@ -18,7 +18,7 @@ body {
     flex-direction: row;
   }
 }
-.logo-container {
+.logoContainer {
   height: 277px;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ body {
   }
 }
 
-.title-container {
+.titleContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -74,19 +74,19 @@ body {
 
 .title {
   text-align: center;
-  color: white;
+  color: #ffffff;
   height: 32px;
 }
 
-.title-container select {
-  background-color: white;
+.titleContainer select {
+  background-color: #ffffff;
   // width: 28%;
   display: flex;
   justify-content: center;
   align-self: center;
 
   @include tablet { 
-    background-color: #fff;
+    background-color:#ffffff;
     // width: 76%;
     display: flex;
     justify-content: center;
@@ -112,12 +112,8 @@ p.title {
   }
 }
 
-// .section-container {  
-//   @include desktop { 
-// width: 120px;
-// }
-// }
-.loadergif {
+
+.loaderGif {
   width: 100%;
   text-align: center;
 
@@ -127,9 +123,6 @@ p.title {
     left: -26%;
   }
   @include desktop { 
-    // position: relative;
-    // left: -56%;
-
     left: -52%;
     top: 58%;
   }
@@ -138,18 +131,20 @@ p.title {
 
 
 
-.copyright-section {
+.copyrightSection {
   color: #c2c2c2;
   text-align: center;
   margin-top: 20px;
   height: 45px;
 }
 
-.copyright-section h2 {
+.copyrightSection h2 {
   top: 83%;
   left: 20%;
   @include tablet {
-  margin-left: 141px;
+  // margin-left: 141px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @include desktop { 
@@ -188,7 +183,7 @@ p.articleTitle {
   bottom: 0;
   background-color: rgba(0,0,0,0.40);
   width: 100%;
-  color: #ffff;
+  color: #ffffff;
 }
 @media screen and (min-width: 600px) {
 //   .main {
