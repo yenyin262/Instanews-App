@@ -3,231 +3,222 @@ body {
   font-family: $brand-font;
   font-size: 16px;
   color: #ffffff;
-}
-.main {
-  display: flex;
-  flex-basis: 100%;
-  flex-flow: column;
-  justify-content: space-between;
 
-  @include tablet {
-    height: 500px;
-    // height: 200px;
+  div.main {
     display: flex;
     flex-basis: 100%;
-    flex-direction: row;
-  }
-}
-.logoContainer {
-  height: 277px;
-  display: flex;
-  justify-content: center;
-  margin-top: 127px;
-  margin-left: 3px;
-  align-items: center;
+    flex-flow: column;
+    height: 90vh;
 
-  @include tablet { 
-    height: 90%;
-    margin-left: 115px;
-    margin-top: 50px;
-  }
-
-  @include desktop { 
-    height: 100%;
-    margin-top: 0;
-    margin-left: 50px;
-  }
-}
-.logo {
-  height: 226px;
-
-  @include tablet { 
-    height:200px;
-  }
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 50px;
-
-  @include tablet { 
-    flex-direction: column;
-    align-self: center;
-    margin-top: 31px;
-    margin-bottom: 0px;
-  }
-
-  @include desktop { 
-    display:initial;
-    margin-left: 100px;
-    // margin-bottom: 20px;
-    margin-top: 0px;
-    margin-left: 100px;
-    /* margin-bottom: 111px; */
-    // margin-top: 218px;
-
-  }
-
-}
-
-.title {
-  text-align: center;
-  color: #ffffff;
-  height: 32px;
-}
-
-.titleContainer select {
-  background-color: #ffffff;
-  // width: 28%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-
-  @include tablet { 
-    background-color:#ffffff;
-    // width: 76%;
-    display: flex;
-    justify-content: center;
-    height: 22px;
-    margin-left: -12px;
-
-  }
-  @include desktop { 
-    margin-left: -13px;
-    margin-top: 10px;
-    // width: 23%;
-
-  }
-}
-
-p.title {  
- 
-  @include desktop { 
-    display: inline;
-    margin-left: -12px;
-   
- 
-  }
-}
-
-
-.loaderGif {
-  width: 100%;
-  text-align: center;
-
-  @include tablet {
-    position: relative;
-    top: 62%;
-    left: -26%;
-  }
-  @include desktop { 
-    left: -52%;
-    top: 58%;
-  }
-
-}
-
-
-
-.copyrightSection {
-  color: #c2c2c2;
-  text-align: center;
-  margin-top: 20px;
-  height: 45px;
-}
-
-.copyrightSection h2 {
-  top: 83%;
-  left: 20%;
-  @include tablet {
-  // margin-left: 141px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@include desktop { 
-  margin-left: -78%;
-}
-}
-.instanews{ 
-  text-transform: uppercase;
-}
-
-
-.sectionArticleContainer { 
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-}
-.articleContents { 
-  height: 430px;
-  background-size: cover;
-  background-position: center;
-  position:relative;
-  @include tablet {
-    flex-basis: 33%;
-    height:300px;
-    @include desktop {
-    flex-basis: 25%;
-    height: 450px;
+    @include tablet {
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: row;
     }
-}
 
-p.articleTitle { 
-  position: absolute;
-  line-height: 1.5;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.40);
-  width: 100%;
-  color: #ffffff;
-}
+    div.logoContainer {
+      height: 277px;
+      display: flex;
+      justify-content: center;
+      margin-top: 127px;
+      margin-left: 3px;
+      align-items: center;
 
+      @include tablet {
+        height: 90%;
+        margin-left: 115px;
+        margin-top: 50px;
+      }
 
-// p.articleTitle a:hover  {
+      @include desktop {
+        height: 100%;
+        margin-top: 0;
+        margin-left: 50px;
+      }
 
-//   display: none; 
-//   }
-@media screen and (min-width: 600px) {
-//   .main {
-//     height: 500px;
-//     display: flex;
-//     flex-basis: 100%;
-//     flex-direction: row;
-//   }
+      .logo {
+        height: 226px;
 
-//   .logo-container {
-//     height: 90%;
-//     margin-left: 115px;
-//     margin-top: 50px;
-//   }
+        @include tablet {
+          height: 200px;
+        }
+      }
+    }
+    .titleContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-  // .title-container {
-  //   flex-direction: column;
-  //   align-self: center;
-    
-  // }
+      @include tablet {
+        flex-direction: column;
+        align-self: center;
+        margin-top: 31px;
+        // margin-bottom: 0px;
+      }
 
-  // .title-container select {
-  //   // background-color: white;
-  //   // width: 40%;
-  //   // display: flex;
-  //   // justify-content: center;
-  //   // height: 22px;
+      @include desktop {
+        display: initial;
+        margin-left: 100px;
+        // margin-bottom: 20px;
+        margin-top: 0px;
+        margin-left: 100px;
+        /* margin-bottom: 111px; */
+        // margin-top: 218px;
+      }
+    }
 
-  //   background-color: #fff;
-  //   width: 80%;
-   
-  //   display: flex;
+    .title {
+      text-align: center;
+      color: #ffffff;
+      height: 32px;
+    }
 
-  //   justify-content: center;
-  //   height: 22px;
-  //   margin-left: -12px;
-  // }
-  /* 
+    .titleContainer select {
+      background-color: #ffffff;
+      // width: 28%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-left: -19px;
+
+      @include tablet {
+        background-color: #ffffff;
+        // width: 76%;
+        display: flex;
+        justify-content: center;
+        height: 22px;
+        margin-left: -12px;
+      }
+      @include desktop {
+        margin-left: -13px;
+        margin-top: 10px;
+        // width: 23%;
+      }
+    }
+
+    p.title {
+      @include desktop {
+        display: inline;
+        margin-left: -12px;
+      }
+    }
+  }
+  .loaderGif {
+    width: 100%;
+    text-align: center;
+    // display: none;
+    @include tablet {
+      position: relative;
+      top: 62%;
+      left: -26%;
+      height: 100px;
+    }
+    @include desktop {
+      left: -52%;
+      top: 58%;
+    }
+  }
+
+  .ajax {
+    display: none;
+    width: 50px;
+  }
+
+  .copyrightSection {
+    color: #c2c2c2;
+    text-align: center;
+    margin-top: 20px;
+    height: 45px;
+  }
+
+  .copyrightSection h2 {
+    // top: 83%;
+    // left: 20%;
+    @include tablet {
+      // margin-left: 141px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include desktop {
+      margin-left: -78%;
+    }
+  }
+  .instanews {
+    text-transform: uppercase;
+  }
+
+  .sectionArticleContainer {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  .articleContents {
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include tablet {
+      flex-basis: 33.3%;
+      height: 300px;
+      @include desktop {
+        flex-basis: 25%;
+        height: 450px;
+      }
+    }
+
+    p.articleTitle {
+      position: absolute;
+      line-height: 1.5;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      color: #ffffff;
+    }
+  }
+  // p.articleTitle a:hover  {
+
+  //   display: none;
+  //   }
+  @media screen and (min-width: 600px) {
+    //   .main {
+    //     height: 500px;
+    //     display: flex;
+    //     flex-basis: 100%;
+    //     flex-direction: row;
+    //   }
+
+    //   .logo-container {
+    //     height: 90%;
+    //     margin-left: 115px;
+    //     margin-top: 50px;
+    //   }
+
+    // .title-container {
+    //   flex-direction: column;
+    //   align-self: center;
+
+    // }
+
+    // .title-container select {
+    //   // background-color: white;
+    //   // width: 40%;
+    //   // display: flex;
+    //   // justify-content: center;
+    //   // height: 22px;
+
+    //   background-color: #fff;
+    //   width: 80%;
+
+    //   display: flex;
+
+    //   justify-content: center;
+    //   height: 22px;
+    //   margin-left: -12px;
+    // }
+    /* 
 .section-list-container {
     flex-wrap: wrap;
     display: flex;
@@ -241,11 +232,10 @@ p.articleTitle {
     width: 100%; 
     margin-bottom: 25px;
 } */
-}
-@media screen and (min-width: 1200px) {
-  /* .main { 
+  }
+  @media screen and (min-width: 1200px) {
+    /* .main { 
     height: 
 } */
-
-}
+  }
 }

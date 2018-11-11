@@ -89,12 +89,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  height: 90vh; }
   @media (min-width: 600px) {
     .main {
-      height: 500px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -143,8 +140,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  margin-bottom: 50px; }
+  width: 100%; }
   @media (min-width: 600px) {
     .titleContainer {
       -webkit-box-orient: vertical;
@@ -153,8 +149,7 @@ body {
               flex-direction: column;
       -ms-flex-item-align: center;
           align-self: center;
-      margin-top: 31px;
-      margin-bottom: 0px; } }
+      margin-top: 31px; } }
   @media (min-width: 1240px) {
     .titleContainer {
       display: initial;
@@ -177,7 +172,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  margin-left: -19px; }
   @media (min-width: 600px) {
     .titleContainer select {
       background-color: #ffffff;
@@ -206,11 +202,16 @@ body {
     .loaderGif {
       position: relative;
       top: 62%;
-      left: -26%; } }
+      left: -26%;
+      height: 100px; } }
   @media (min-width: 1240px) {
     .loaderGif {
       left: -52%;
       top: 58%; } }
+
+.ajax {
+  display: none;
+  width: 50px; }
 
 .copyrightSection {
   color: #c2c2c2;
@@ -218,16 +219,14 @@ body {
   margin-top: 20px;
   height: 45px; }
 
-.copyrightSection h2 {
-  top: 83%;
-  left: 20%; }
-  @media (min-width: 600px) {
-    .copyrightSection h2 {
-      margin-left: auto;
-      margin-right: auto; } }
-  @media (min-width: 1240px) {
-    .copyrightSection h2 {
-      margin-left: -78%; } }
+@media (min-width: 600px) {
+  .copyrightSection h2 {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 1240px) {
+  .copyrightSection h2 {
+    margin-left: -78%; } }
 
 .instanews {
   text-transform: uppercase; }
@@ -248,8 +247,8 @@ body {
   position: relative; }
   @media (min-width: 600px) {
     .articleContents {
-      -ms-flex-preferred-size: 33%;
-          flex-basis: 33%;
+      -ms-flex-preferred-size: 33.3%;
+          flex-basis: 33.3%;
       height: 300px; } }
   @media (min-width: 600px) and (min-width: 1240px) {
     .articleContents {
