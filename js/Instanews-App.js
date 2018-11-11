@@ -5,7 +5,7 @@ const articleOption = $('.sectionArticleContainer')
 
 $(function () {
     // selectOption.select2();
-    selectOption.on("change", function (event) { //to store the lists of articles in each match select section
+    selectOption.on("change", function (event) { 
         articleOption.empty();
         let news = [];
         let apiUrl = "https://api.nytimes.com/svc/topstories/v2/";
@@ -14,9 +14,7 @@ $(function () {
         });
         let url = apiUrl + event.target.value + ".json" + apiKey;
 
-        // if (event.target.value === 'section') {
-        //     return
-        // }
+       
         console.log(event);
         $.ajax({
             url: url,
