@@ -4,7 +4,7 @@ const articleOption = $('.sectionArticleContainer')
 
 
 $(function () {
-
+    // selectOption.select2();
     selectOption.on("change", function (event) { //to store the lists of articles in each match select section
         articleOption.empty();
         let news = [];

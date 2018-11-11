@@ -78,208 +78,169 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   color: #ffffff; }
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  height: 90vh; }
-  @media (min-width: 600px) {
-    .main {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-
-.logoContainer {
-  height: 277px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 127px;
-  margin-left: 3px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media (min-width: 600px) {
-    .logoContainer {
-      height: 90%;
-      margin-left: 115px;
-      margin-top: 50px; } }
-  @media (min-width: 1240px) {
-    .logoContainer {
-      height: 100%;
-      margin-top: 0;
-      margin-left: 50px; } }
-
-.logo {
-  height: 226px; }
-  @media (min-width: 600px) {
-    .logo {
-      height: 200px; } }
-
-.titleContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%; }
-  @media (min-width: 600px) {
-    .titleContainer {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-item-align: center;
-          align-self: center;
-      margin-top: 31px; } }
-  @media (min-width: 1240px) {
-    .titleContainer {
-      display: initial;
-      margin-left: 100px;
-      margin-top: 0px;
-      margin-left: 100px;
-      /* margin-bottom: 111px; */ } }
-
-.title {
-  text-align: center;
-  color: #ffffff;
-  height: 32px; }
-
-.titleContainer select {
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-left: -19px; }
-  @media (min-width: 600px) {
-    .titleContainer select {
-      background-color: #ffffff;
+  body div.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 90vh;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s; }
+    @media (min-width: 600px) {
+      body div.main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    body div.main div.logoContainer {
+      height: 277px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      height: 22px;
-      margin-left: -12px; } }
-  @media (min-width: 1240px) {
-    .titleContainer select {
-      margin-left: -13px;
-      margin-top: 10px; } }
-
-@media (min-width: 1240px) {
-  p.title {
-    display: inline;
-    margin-left: -12px; } }
-
-.loaderGif {
-  width: 100%;
-  text-align: center; }
+      margin-top: 127px;
+      margin-left: 3px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (min-width: 600px) {
+        body div.main div.logoContainer {
+          height: 90%;
+          margin-left: 115px;
+          margin-top: 50px; } }
+      @media (min-width: 1240px) {
+        body div.main div.logoContainer {
+          height: 100%;
+          margin-top: 0;
+          margin-left: 50px; } }
+      body div.main div.logoContainer img {
+        height: 226px; }
+        @media (min-width: 600px) {
+          body div.main div.logoContainer img {
+            height: 200px; } }
+    body div.main div.titleContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media (min-width: 600px) {
+        body div.main div.titleContainer {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-item-align: center;
+              align-self: center;
+          margin-top: 31px; } }
+      @media (min-width: 1240px) {
+        body div.main div.titleContainer {
+          display: initial;
+          margin-left: 100px;
+          margin-top: 0px;
+          margin-left: 100px;
+          /* margin-bottom: 111px; */ } }
+      body div.main div.titleContainer p.title {
+        text-align: center;
+        color: #ffffff;
+        height: 32px; }
+        @media (min-width: 1240px) {
+          body div.main div.titleContainer p.title {
+            display: inline;
+            margin-left: -12px; } }
+      body div.main div.titleContainer select.sectionContainer {
+        background-color: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin-left: -19px; }
+        @media (min-width: 600px) {
+          body div.main div.titleContainer select.sectionContainer {
+            background-color: #ffffff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            height: 22px;
+            margin-left: -12px; } }
+        @media (min-width: 1240px) {
+          body div.main div.titleContainer select.sectionContainer {
+            margin-left: -13px;
+            margin-top: 10px; } }
+  body div.loaderGif {
+    width: 100%; }
+    body div.loaderGif img {
+      display: none;
+      width: 50px;
+      height: 50px; }
+  body div.copyrightSection {
+    color: #c2c2c2;
+    text-align: center;
+    margin-top: 20px;
+    height: 45px; }
+    @media (min-width: 600px) {
+      body div.copyrightSection h2 {
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 1240px) {
+      body div.copyrightSection h2 {
+        margin-left: -78%; } }
+    body div.copyrightSection span {
+      text-transform: uppercase; }
   @media (min-width: 600px) {
-    .loaderGif {
-      position: relative;
-      top: 62%;
-      left: -26%;
-      height: 100px; } }
-  @media (min-width: 1240px) {
-    .loaderGif {
-      left: -52%;
-      top: 58%; } }
-
-.ajax {
-  display: none;
-  width: 50px; }
-
-.copyrightSection {
-  color: #c2c2c2;
-  text-align: center;
-  margin-top: 20px;
-  height: 45px; }
-
-@media (min-width: 600px) {
-  .copyrightSection h2 {
-    margin-left: auto;
-    margin-right: auto; } }
-
-@media (min-width: 1240px) {
-  .copyrightSection h2 {
-    margin-left: -78%; } }
-
-.instanews {
-  text-transform: uppercase; }
-
-@media (min-width: 600px) {
-  .sectionArticleContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%; } }
-
-.articleContents {
-  height: 430px;
-  background-size: cover;
-  background-position: center;
-  position: relative; }
-  @media (min-width: 600px) {
-    .articleContents {
-      -ms-flex-preferred-size: 33.3%;
-          flex-basis: 33.3%;
-      height: 300px; } }
+    body div.sectionArticleContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%; } }
+  body div.sectionArticleContainer div.articleContents {
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+    @media (min-width: 600px) {
+      body div.sectionArticleContainer div.articleContents {
+        -ms-flex-preferred-size: 33.3%;
+            flex-basis: 33.3%;
+        height: 300px; } }
   @media (min-width: 600px) and (min-width: 1240px) {
-    .articleContents {
+    body div.sectionArticleContainer div.articleContents {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
       height: 450px; } }
-  .articleContents p.articleTitle {
-    position: absolute;
-    line-height: 1.5;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    color: #ffffff; }
-  @media screen and (min-width: 600px) {
-    .articleContents {
-      /* 
-.section-list-container {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-
-}
-
-.section-list-container select {
-    border: solid white 2px;
-    width: 100%; 
-    margin-bottom: 25px;
-} */ } }
-  @media screen and (min-width: 1200px) {
-    .articleContents {
-      /* .main { 
-    height: 
-} */ } }
+    body div.sectionArticleContainer div.articleContents p.articleTitle {
+      position: absolute;
+      line-height: 1.5;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      color: #ffffff;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+      height: 0px; }
+    body div.sectionArticleContainer div.articleContents:hover p.articleTitle {
+      height: auto; }
