@@ -5,7 +5,7 @@ const articleOption = $('.sectionArticleContainer')
 
 $(function () {
     // selectOption.select2();
-    selectOption.on("change", function (event) { 
+    selectOption.on("change", function (event) {
         articleOption.empty();
         let news = [];
         let apiUrl = "https://api.nytimes.com/svc/topstories/v2/";
@@ -14,7 +14,7 @@ $(function () {
         });
         let url = apiUrl + event.target.value + ".json" + apiKey;
 
-       
+
         console.log(event);
         $.ajax({
             url: url,
@@ -54,7 +54,7 @@ selectOption.on("change", function (event) {
     });
 
     $(".sectionContainer option[value='section']").remove();
-   
+
 
 
     if ($(window).width() >= 600 && $(window).width() < 1240) {
@@ -85,7 +85,7 @@ selectOption.on("change", function (event) {
         })
 
         $('.titleContainer').css({
-
+            
             "margin-top": '0px',
         })
 
@@ -95,6 +95,10 @@ selectOption.on("change", function (event) {
             "align-self": 'flex-start',
 
         })
+
+        $('.ajax').css({
+            "margin-top": '20px',
+        });
 
 
     } else if ($(window).width() >= 1240) {
@@ -117,35 +121,46 @@ selectOption.on("change", function (event) {
         })
 
         $('.titleContainer select').css({
-        "margin-left": '38px', })
+            "margin-left": '38px',
+        })
 
         $('p.title').css({
             "margin-left": '39px',
         })
 
-
-
-
+        $('.ajax').css({
+        "margin-top": '5%',
+        "margin-left": '-64%',
+        })
 
 
     } else {
 
         $('.main').css({
-            "height": '68vh',
+            "height": '74vh', //'68vh' 
 
         })
 
         articleOption.css({
-            "margin-top": '-60px'
+            "margin-top": '-60px',
 
         })
 
         $('.logoContainer').css({
             "margin-top": '0px',
-
-
-
+            "height": '50vh',
         })
+
+        $('.titleContainer').css({
+        "margin-top": '-20px',
+    })
+
+        $('.ajax').css({
+            "margin-left": '180px',
+        })
+
+
+    
 
     }
 });
