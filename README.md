@@ -25,3 +25,21 @@ The following technologies were applied in building and delivering the one page 
 1.  GULP
 1.  Package.Json
 1.  Jquery's Ajax Method
+
+
+#Screenshots of Responsive Instanews
+
+1. Mobile (Initial view)
+
+<img width="602" alt="screen shot 2018-11-12 at 1 37 12 pm" src="https://user-images.githubusercontent.com/43800526/48376853-fecf4900-e680-11e8-8ac2-042e4f3e1897.png">
+
+1. Tablet (Initial view)
+<img width="602" alt="screen shot 2018-11-12 at 1 37 12 pm" src="https://user-images.githubusercontent.com/43800526/48376853-fecf4900-e680-11e8-8ac2-042e4f3e1897.png">
+
+
+1. Desktop (Initial View)
+
+<img width="1238" alt="screen shot 2018-11-12 at 1 37 34 pm" src="https://user-images.githubusercontent.com/43800526/48377199-ff1c1400-e681-11e8-82ae-f7f3ae14ef0f.png">
+
+
+
