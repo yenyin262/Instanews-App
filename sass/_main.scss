@@ -9,7 +9,7 @@ body {
     flex-basis: 100%;
     flex-flow: column;
     height: 90vh;
-    transition: all 1.5s ;
+    transition: all 1.5s;
 
     @include tablet {
       display: flex;
@@ -103,19 +103,6 @@ body {
   div.loaderGif {
     width: 100%;
 
-    // top: 62%;
-
-    // @include tablet {
-    //   position: relative;
-
-    //   left: -26%;
-    //   height: 100px;
-    // }
-    // @include desktop {
-    //   left: -52%;
-    //   top: 58%;
-    // }
-
     img {
       display: none;
       width: 50px;
@@ -154,7 +141,6 @@ body {
       background-size: cover;
       background-position: center;
       position: relative;
-      
 
       @include tablet {
         flex-basis: 33.3%;
@@ -173,17 +159,15 @@ body {
         width: 100%;
         color: #ffffff;
         transition: all 2s;
-        height: 0px;
+        // height: 0px;
+        display: none;
       }
       &:hover {
         p.articleTitle {
-          height: auto;
+        display: block;
+        // height: auto;
         }
       }
     }
   }
-  // p.articleTitle a:hover  {
-
-  //   display: none;
-  //   }
 }
