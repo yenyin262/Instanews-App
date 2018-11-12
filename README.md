@@ -27,11 +27,12 @@ The following technologies were applied in building and delivering the one page 
 1.  Jquery's Ajax Method
 
 
-#Screenshots of Responsive Instanews
+# Screenshots of Responsive Instanews
 
 1. Mobile (Initial view)
 
-<img width="602" alt="screen shot 2018-11-12 at 1 37 12 pm" src="https://user-images.githubusercontent.com/43800526/48376853-fecf4900-e680-11e8-8ac2-042e4f3e1897.png">
+<img width="426" alt="screen shot 2018-11-12 at 1 36 36 pm" src="https://user-images.githubusercontent.com/43800526/48377452-b2850880-e682-11e8-97c5-4080d205842d.png">
+
 
 1. Tablet (Initial view)
 <img width="602" alt="screen shot 2018-11-12 at 1 37 12 pm" src="https://user-images.githubusercontent.com/43800526/48376853-fecf4900-e680-11e8-8ac2-042e4f3e1897.png">
