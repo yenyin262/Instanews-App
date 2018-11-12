@@ -2,12 +2,12 @@
 #  Welcome to Instanews  App! 	
 
 
-####  Instruction:-  
+####  Instruction:  
 
 Open index.html on any internet browser to view the one page responsive website 
 
 
-# Description:- 
+# Description: 
 
 A one-page responsive news website allowing users to filter top news story categories via New York Times API. The website provides different  news category catering to the users preferred interests of news. It display twelve news articles for users to select, upon selecting the news the link directs the user to the desired choice. 
  
