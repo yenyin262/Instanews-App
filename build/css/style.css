@@ -241,6 +241,6 @@ body {
       color: #ffffff;
       -webkit-transition: all 2s;
       transition: all 2s;
-      height: 0px; }
+      display: none; }
     body div.sectionArticleContainer div.articleContents:hover p.articleTitle {
-      height: auto; }
+      display: block; }
