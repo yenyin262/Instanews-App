@@ -32,7 +32,7 @@ The following technologies were applied in building and delivering the one page 
 1. Using SASS syntax
 1. Acknowledging that Gulp provides an efficient platform in repetitive tasks ie. refreshes browser when file is saved & 
    bundling and minifying libraries and stylesheets
-1. Change CSS elements using Jquery
+1. Changing CSS properties on elements using Jquery
 
 # Screenshots of Responsive Instanews
 
