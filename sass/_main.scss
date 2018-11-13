@@ -2,7 +2,7 @@ body {
   background-color: black;
   font-family: $brand-font;
   font-size: 16px;
-  color: #ffffff;
+  color: $brand-color;
 
   div.main {
     display: flex;
@@ -54,39 +54,35 @@ body {
         flex-direction: column;
         align-self: center;
         margin-top: 31px;
-        // margin-bottom: 0px;
       }
 
       @include desktop {
         display: initial;
         margin-left: 100px;
-        // margin-bottom: 20px;
         margin-top: 0px;
         margin-left: 100px;
-        /* margin-bottom: 111px; */
-        // margin-top: 218px;
       }
 
       p.title {
         text-align: center;
-        color: #ffffff;
+        color: $brand-color;
         height: 32px;
+
         @include desktop {
           display: inline;
           margin-left: -12px;
         }
       }
+
       select.sectionContainer {
-        background-color: #ffffff;
-        // width: 28%;
+        background-color: $brand-color;
         display: flex;
         justify-content: center;
         align-self: center;
         margin-left: -19px;
 
         @include tablet {
-          background-color: #ffffff;
-          // width: 76%;
+          background-color: $brand-color;
           display: flex;
           justify-content: center;
           height: 22px;
@@ -95,7 +91,6 @@ body {
         @include desktop {
           margin-left: -13px;
           margin-top: 10px;
-          // width: 23%;
         }
       }
     }
@@ -157,15 +152,13 @@ body {
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.4);
         width: 100%;
-        color: #ffffff;
+        color: $brand-color;
         transition: all 2s;
-        // height: 0px;
         display: none;
       }
       &:hover {
         p.articleTitle {
-        display: block;
-        // height: auto;
+          display: block;
         }
       }
     }
