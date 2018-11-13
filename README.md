@@ -29,18 +29,22 @@ The following technologies were applied in building and delivering the one page 
 
 # Screenshots of Responsive Instanews
 
-1. Mobile (Initial view)
+ Mobile (Initial view)
 
 <img width="426" alt="screen shot 2018-11-12 at 1 36 36 pm" src="https://user-images.githubusercontent.com/43800526/48377452-b2850880-e682-11e8-97c5-4080d205842d.png">
 
+<img width="346" alt="screen shot 2018-11-13 at 12 47 40 am" src="https://user-images.githubusercontent.com/43800526/48401750-b5ade200-e6de-11e8-86ef-834439e7e505.png">
 
-1. Tablet (Initial view)
+
+ Tablet 
 <img width="602" alt="screen shot 2018-11-12 at 1 37 12 pm" src="https://user-images.githubusercontent.com/43800526/48376853-fecf4900-e680-11e8-8ac2-042e4f3e1897.png">
 
+<img width="600" alt="screen shot 2018-11-13 at 12 44 20 am" src="https://user-images.githubusercontent.com/43800526/48401643-767f9100-e6de-11e8-8493-9b8bd78e4ccf.png">
 
-1. Desktop (Initial View)
+
+ Desktop 
 
 <img width="1238" alt="screen shot 2018-11-12 at 1 37 34 pm" src="https://user-images.githubusercontent.com/43800526/48377199-ff1c1400-e681-11e8-82ae-f7f3ae14ef0f.png">
 
 
-
+<img width="1241" alt="screen shot 2018-11-13 at 12 45 16 am" src="https://user-images.githubusercontent.com/43800526/48401713-9adb6d80-e6de-11e8-8b2b-31d29424788e.png">
