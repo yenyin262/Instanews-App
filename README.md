@@ -23,9 +23,16 @@ The following technologies were applied in building and delivering the one page 
 1.	Git/Github
 1.	Command Line
 1.  GULP
-1.  Package.Json
+1.  API
 1.  Jquery's Ajax Method
 
+# Personal Learning Developements:
+
+1. Ajax requests are initiated by JavaScript 
+1. Using SASS syntax
+1. Acknowledging that Gulp provides an efficient platform in repetitive tasks ie. refreshes browser when file is saved & 
+   bundling and minifying libraries and stylesheets
+1. Change CSS elements using Jquery
 
 # Screenshots of Responsive Instanews
 
