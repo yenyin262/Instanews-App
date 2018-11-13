@@ -93,11 +93,6 @@ body {
     transition: all 1.5s; }
     @media (min-width: 600px) {
       body div.main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -141,10 +136,6 @@ body {
       width: 100%; }
       @media (min-width: 600px) {
         body div.main div.titleContainer {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
           -ms-flex-item-align: center;
               align-self: center;
           margin-top: 31px; } }
@@ -152,9 +143,7 @@ body {
         body div.main div.titleContainer {
           display: initial;
           margin-left: 100px;
-          margin-top: 0px;
-          margin-left: 100px;
-          /* margin-bottom: 111px; */ } }
+          margin-top: 0px; } }
       body div.main div.titleContainer p.title {
         text-align: center;
         color: #ffffff;
@@ -176,13 +165,6 @@ body {
         margin-left: -19px; }
         @media (min-width: 600px) {
           body div.main div.titleContainer select.sectionContainer {
-            background-color: #ffffff;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
             height: 22px;
             margin-left: -12px; } }
         @media (min-width: 1240px) {
