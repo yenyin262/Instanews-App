@@ -14,15 +14,12 @@ $(function () {
         });
         let url = apiUrl + event.target.value + ".json" + apiKey;
 
-
-        console.log(event);
         $.ajax({
             url: url,
             method: 'GET',
         }).done(function (data) {
 
             news = data.results;
-            console.log(data);
 
             $('.loaderGif').hide();
             let counter = 0;
@@ -50,7 +47,7 @@ $(function () {
 
 selectOption.on("change", function (event) {
     $('.ajax').css({
-        "display": 'inline',
+        'display': 'inline',
     });
 
     $(".sectionContainer option[value='section']").remove();
@@ -59,104 +56,104 @@ selectOption.on("change", function (event) {
 
     if ($(window).width() >= 600 && $(window).width() < 1240) {
         $('.main').css({
-            "height": '15vh',
+            'height': '15vh',
 
         })
 
         $('.logoContainer').css({
-            "height": '100px',
-            "margin-top": '0px',
-            "margin-left": '138px',
+            'height': '100px',
+            'margin-top': '0px',
+            'margin-left': '138px',
 
 
         })
 
         $('.logo').css({
-            "height": '65px',
+            'height': '65px',
 
         })
 
 
         $('p.title').css({
-            "text-align": 'initial',
-            "left": '8%',
-            "position": 'relative',
+            'text-align': 'initial',
+            'left': '8%',
+            'position': 'relative',
 
         })
 
         $('.titleContainer').css({
             
-            "margin-top": '0px',
+            'margin-top': '0px',
         })
 
         $('.titleContainer select').css({
 
-            "margin-left": '35px',
-            "align-self": 'flex-start',
+            'margin-left': '35px',
+            'align-self': 'flex-start',
 
         })
 
         $('.ajax').css({
-            "margin-top": '20px',
+            'margin-top': '20px',
         });
 
 
     } else if ($(window).width() >= 1240) {
 
         $('.main').css({
-            "height": '15vh',
+            'height': '15vh',
 
         })
 
         $('.logo').css({
-            "height": '65px',
+            'height': '65px',
 
         })
 
         $('.logoContainer').css({
-            "margin-left": '50px',
+            'margin-left': '50px',
         })
         $('.titleContainer').css({
-            "margin-left": '50px',
+            'margin-left': '50px',
         })
 
         $('.titleContainer select').css({
-            "margin-left": '38px',
+            'margin-left': '38px',
         })
 
         $('p.title').css({
-            "margin-left": '39px',
+            'margin-left': '39px',
         })
 
         $('.ajax').css({
-        "margin-top": '5%',
-        "margin-left": '-64%',
+        'margin-top': '5%',
+        'margin-left': '-64%',
         })
 
 
     } else {
 
         $('.main').css({
-            "height": '74vh', //'68vh' 
+            'height': '74vh', 
 
         })
 
         articleOption.css({
-            "margin-top": '-60px',
+            'margin-top': '-60px',
 
         })
 
         $('.logoContainer').css({
-            "margin-top": '0px',
-            "height": '50vh',
+            'margin-top': '0px',
+            'height': '50vh',
         })
 
         $('.titleContainer').css({
-        "margin-top": '-20px',
+        'margin-top': '-20px',
     })
 
         $('.ajax').css({
-            "margin-left": '180px',
+            'margin-left': '180px',
         })
 
 
