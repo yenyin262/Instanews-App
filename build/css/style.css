@@ -233,10 +233,8 @@ body {
       display: none; }
     body div.sectionArticleContainer div.articleContents:hover p.articleTitle {
       display: block; }
-
-.select2-results__option[aria-selected] {
-  cursor: pointer;
-  color: black; }
-
-.select2-container--default .select2-selection--single {
-  height: 25px; }
+  body .select2-results__option[aria-selected] {
+    cursor: pointer;
+    color: black; }
+  body .select2-container--default .select2-selection--single {
+    height: 25px; }

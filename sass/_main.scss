@@ -159,12 +159,13 @@ body {
       }
     }
   }
-}
-.select2-results__option[aria-selected] {
-  cursor: pointer;
-  color: black;
+  .select2-results__option[aria-selected] {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .select2-container--default .select2-selection--single {
+    height: 25px;
+  }
 }
 
-.select2-container--default .select2-selection--single {
-  height: 25px;
-}
