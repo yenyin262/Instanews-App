@@ -19,12 +19,14 @@ and create content dynamically and having the ability to control multimedia.
 The following technologies were applied in building and delivering the one page responsive news website:- 
 
 1.	HTML, CSS, JavaScript & JQuery 
+1.  .estlintrc
+1.  NPM
 1.	SASS
 1.	Git/Github
 1.	Command Line
 1.  GULP
 1.  API
-1.  Jquery's Ajax Method
+1.  jQuery's Ajax Method
 
 # Personal Learning Developements:
 
