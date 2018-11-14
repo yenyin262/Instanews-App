@@ -47,6 +47,7 @@ body {
       display: flex;
       flex-direction: column;
       width: 100%;
+      align-items: center;
 
       @include tablet {
         align-self: center;
@@ -54,19 +55,21 @@ body {
       }
 
       @include desktop {
-        display: initial;
-        margin-left: 100px;
-        margin-top: 0px;
+        margin-top: -28px;
+        margin-left: 90px;
+        align-items: normal;
       }
 
       p.title {
-        text-align: center;
+        margin-left: 20px;
         color: $brand-color;
         height: 32px;
 
+        @include tablet {
+          margin-left: 14px;
+        }
         @include desktop {
-          display: inline;
-          margin-left: -12px;
+          margin-left: 0px;
         }
       }
 
@@ -157,3 +160,12 @@ body {
     }
   }
 }
+.select2-results__option[aria-selected] {
+  cursor: pointer;
+  color: black;
+}
+
+.select2-container--default .select2-selection--single {
+  height: 25px;
+}
+

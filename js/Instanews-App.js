@@ -4,7 +4,7 @@ const articleOption = $('.sectionArticleContainer')
 
 
 $(function () {
-    // selectOption.select2();
+    selectOption.select2();
     selectOption.on("change", function (event) {
         articleOption.empty();
         let news = [];
@@ -56,38 +56,31 @@ selectOption.on("change", function (event) {
 
     if ($(window).width() >= 600 && $(window).width() < 1240) {
         $('.main').css({
-            'height': '15vh',
-
+            'height': '16vh',
         })
 
         $('.logoContainer').css({
             'height': '100px',
             'margin-top': '0px',
             'margin-left': '138px',
-
-
         })
 
         $('.logo').css({
             'height': '65px',
-
         })
 
 
         $('p.title').css({
-            'text-align': 'initial',
-            'left': '8%',
-            'position': 'relative',
-
+            'margin-left': '-1px',
         })
 
         $('.titleContainer').css({
-            
+            'margin-left': '60px',
             'margin-top': '0px',
+            'align-items': 'normal',
         })
 
         $('.titleContainer select').css({
-
             'margin-left': '35px',
             'align-self': 'flex-start',
 
@@ -102,45 +95,37 @@ selectOption.on("change", function (event) {
 
         $('.main').css({
             'height': '15vh',
-
         })
 
         $('.logo').css({
             'height': '65px',
-
         })
 
         $('.logoContainer').css({
             'margin-left': '50px',
         })
         $('.titleContainer').css({
-            'margin-left': '50px',
+            'margin-top': '-6px'
         })
 
         $('.titleContainer select').css({
             'margin-left': '38px',
         })
 
-        $('p.title').css({
-            'margin-left': '39px',
-        })
-
         $('.ajax').css({
-        'margin-top': '5%',
-        'margin-left': '-64%',
+            'margin-top': '5%',
+            'margin-left': '-64%',
         })
 
 
     } else {
 
         $('.main').css({
-            'height': '74vh', 
-
+            'height': '74vh',
         })
 
         articleOption.css({
             'margin-top': '-60px',
-
         })
 
         $('.logoContainer').css({
@@ -149,15 +134,15 @@ selectOption.on("change", function (event) {
         })
 
         $('.titleContainer').css({
-        'margin-top': '-20px',
-    })
+            'margin-top': '-20px',
+        })
 
         $('.ajax').css({
             'margin-left': '180px',
         })
 
 
-    
+
 
     }
 });
