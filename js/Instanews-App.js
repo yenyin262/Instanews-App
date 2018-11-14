@@ -76,7 +76,7 @@ selectOption.on("change", function (event) {
 
         $('.titleContainer').css({
             'margin-left': '60px',
-            'margin-top': '0px',
+            'margin-top': '4px',
             'align-items': 'normal',
         })
 
