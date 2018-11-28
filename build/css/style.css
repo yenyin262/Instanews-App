@@ -221,6 +221,11 @@ body {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
       height: 450px; } }
+    body div.sectionArticleContainer div.articleContents a {
+      display: block;
+      height: 100%; }
+      body div.sectionArticleContainer div.articleContents a:hover p.articleTitle {
+        display: block; }
     body div.sectionArticleContainer div.articleContents p.articleTitle {
       position: absolute;
       line-height: 1.5;
@@ -231,8 +236,6 @@ body {
       -webkit-transition: all 2s;
       transition: all 2s;
       display: none; }
-    body div.sectionArticleContainer div.articleContents:hover p.articleTitle {
-      display: block; }
   body .select2-results__option[aria-selected] {
     cursor: pointer;
     color: black; }

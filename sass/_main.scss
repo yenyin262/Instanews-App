@@ -142,6 +142,17 @@ body {
         }
       }
 
+      a {
+        display: block;
+        height: 100%;
+
+        &:hover {
+          p.articleTitle {
+            display: block;
+          }
+        }
+      }
+
       p.articleTitle {
         position: absolute;
         line-height: 1.5;
@@ -152,21 +163,15 @@ body {
         transition: all 2s;
         display: none;
       }
-      &:hover {
-        p.articleTitle {
-          display: block;
-        }
-      }
     }
   }
   .select2-results__option[aria-selected] {
     cursor: pointer;
     color: black;
   }
-  
+
   .select2-container--default .select2-selection--single {
     height: 25px;
-    outline:none;
+    outline: none;
   }
 }
-
