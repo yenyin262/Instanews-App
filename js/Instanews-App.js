@@ -1,35 +1,40 @@
 
-const selectOption = $('.sectionContainer')
-const articleOption = $('.sectionArticleContainer')
+
 
 
 $(function () {
-    selectOption.select2();
-    selectOption.on("change", function (event) {
+    const selectOption = $('.sectionContainer')
+    const articleOption = $('.sectionArticleContainer')
+
+      selectOption.select2();
+
+    selectOption.on("change", (event) => {
         articleOption.empty();
         let news = [];
         let apiUrl = "https://api.nytimes.com/svc/topstories/v2/";
         let apiKey = '?' + $.param({
-            'api-key': "c295f39d23ee41c4868972af403fba71"
+            'api-key': "VgfxUztDMZve2b4mN3eRWPXLVz35FvgT"
         });
         let url = apiUrl + event.target.value + ".json" + apiKey;
 
         $.ajax({
             url: url,
             method: 'GET',
-        }).done(function (data) {
-
+        // }).done(function (data) {
+        }).done((data)  => {
             news = data.results;
 
             $('.loaderGif').hide();
             let counter = 0;
-            $.each(news, function (key, value) {
+            // $.each(news, function (key, value) {
+            $.each(news,(key, value) => {
 
                 if (value.multimedia.length === 5 && counter < 12) {
                     counter = counter + 1;
                     const imageUrl = value.multimedia[4].url;
                     const articleNewsUrl = value.url;
-                    articleOption.append('<div class="articleContents" style="background-image: url(' + imageUrl + ')"> <a id="link" href = ' + articleNewsUrl + '><p class="articleTitle">' + value.title + '</p></a></div>');
+                    articleOption.append(`<div class="articleContents" style="background-image: url(  ${imageUrl })"> <a id="link" href =  ${articleNewsUrl}  ><p class="articleTitle">  ${value.title}  </p></a></div>`);
+                    // articleOption.append('<div class="articleContents" style="background-image: url(' + imageUrl + ')"> <a id="link" href = ' + articleNewsUrl + '><p class="articleTitle">' + value.title + '</p></a></div>');
 
                 }
 
@@ -42,16 +47,16 @@ $(function () {
         });
 
     });
-});
 
 
-selectOption.on("change", function (event) {
+
+selectOption.on("change",  (event)  => {
     $('.ajax').css({
         'display': 'inline',
     });
 
-    $(".sectionContainer option[value='section']").remove();
-
+    //$(".sectionContainer option[value='section']").remove();
+    selectOption.find("option[value='section']").remove(); 
 
 
     if ($(window).width() >= 600 && $(window).width() < 1240) {
@@ -145,4 +150,6 @@ selectOption.on("change", function (event) {
 
 
     }
+});
+
 });
