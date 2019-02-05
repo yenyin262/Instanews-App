@@ -1,17 +1,13 @@
-
-
-
-
 $(function () {
     const selectOption = $('.sectionContainer')
     const articleOption = $('.sectionArticleContainer')
 
       selectOption.select2();
 
-    selectOption.on("change", (event) => {
+    selectOption.on('change', (event) => {
         articleOption.empty();
         let news = [];
-        let apiUrl = "https://api.nytimes.com/svc/topstories/v2/";
+        let apiUrl = 'https://api.nytimes.com/svc/topstories/v2/';
         let apiKey = '?' + $.param({
             'api-key': "VgfxUztDMZve2b4mN3eRWPXLVz35FvgT"
         });
