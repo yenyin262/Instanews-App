@@ -90,7 +90,8 @@ body {
             flex-flow: column;
     height: 90vh;
     -webkit-transition: all 1.5s;
-    transition: all 1.5s; }
+    transition: all 1.5s;
+    padding-top: 20px; }
     @media (min-width: 600px) {
       body div.main {
         -webkit-box-orient: horizontal;
@@ -105,7 +106,7 @@ body {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: 127px;
+      margin-top: 44px;
       margin-left: 3px;
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -235,10 +236,15 @@ body {
       color: #ffffff;
       -webkit-transition: all 2s;
       transition: all 2s;
-      display: none; }
+      display: none;
+      padding-bottom: 10px;
+      padding-top: 10px; }
   body .select2-results__option[aria-selected] {
     cursor: pointer;
     color: black; }
   body .select2-container--default .select2-selection--single {
-    height: 25px;
     outline: none; }
+  body .select2-container {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important; }
