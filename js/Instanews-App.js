@@ -70,28 +70,30 @@ selectOption.on("change",  (event)  => {
             'height': '16vh',
             'padding-top': '20px',
             'padding-bottom': '20px',
+            'justify-content': 'center',
+            'align-items': 'center',
         })
 
         logoContainer.css({
             'height': '100px',
-            'margin-top': '0px',
-            'margin-left': '138px',
+            'margin-top': '0px',       
         })
 
         logo.css({
             'height': '65px',
-            
         })
-
 
         description.css({
             'margin-left': '-1px',
         })
 
         titleContainer.css({
-            'margin-left': '60px',
             'margin-top': '0px',
-            'align-items': 'normal',
+            'align-items': 'unset',
+          'width':'unset',
+             'margin-left': '90px',
+           'margin-right': '40px',
+        
         })
 
         selectTitleContainer.css({
@@ -103,6 +105,10 @@ selectOption.on("change",  (event)  => {
         ajax.css({
             'margin-top': '20px',
         });
+        
+        $('.copyrightSection').css({
+            'margin-top': '20px',
+        })
 
 
     } else if ($(window).width() >= 1240) {
@@ -133,32 +139,45 @@ selectOption.on("change",  (event)  => {
             'margin-left': '-64%',
         })
 
+        $('.copyrightSection').css({
+            'margin-top': '20px',
+        })
+
 
     } else {
 
         main.css({
-            'height': '74vh',
+            //'height': '74vh',
+            // 'height': '90vh',
+        'height': '55vh',
             'padding-bottom':'20px',
+            'padding-top':'20px',
         })
 
+
         articleOption.css({
-            'margin-top': '-60px',
+          //  'margin-top': '-60px',
         })
 
        logoContainer.css({
             'margin-top': '0px',
-            'height': '50vh',
+            'height': '40vh',
+           // 'height': '50vh',
         })
 
         titleContainer.css({
-           // 'margin-top': '-20px',
+           // 'margin-top': '-20px',   
+          //  'margin-top': '20px',
+
         })
 
         ajax.css({
             'margin-left': '180px',
         })
 
-
+        $('.copyrightSection').css({
+            'margin-top': '20px',
+        })
 
 
     }

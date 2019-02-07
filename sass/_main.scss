@@ -10,24 +10,30 @@ body {
     flex-flow: column;
     height: 90vh;
     transition: all 1.5s;
-    padding-top: 20px;
+   // padding-top: 20px;
+    justify-content: center;
+  
     @include tablet {
       flex-direction: row;
+      align-items: center;
+      height: 90vh;
+      justify-content: center;
     }
 
     div.logoContainer {
-      height: 277px;
+    //  height: 277px;
+    height: 246px;
       display: flex;
       justify-content: center;
-     // margin-top: 127px;
      margin-top: 44px;
       margin-left: 3px;
-      align-items: center;
+      
 
       @include tablet {
-        height: 90%;
-        margin-left: 115px;
-        margin-top: 50px;
+        height: 90%; 
+       margin-top: 0px;
+       margin-left: 0px;
+        align-items: center;
       }
 
       @include desktop {
@@ -51,14 +57,18 @@ body {
       align-items: center;
 
       @include tablet {
-        align-self: center;
-        margin-top: 31px;
+        //align-self: center;
+       // margin-top: 31px;
+       display: initial;
+         width: unset;
+      
       }
 
       @include desktop {
         margin-top: -28px;
         margin-left: 90px;
         align-items: normal;
+        width: 100%;
       }
 
       p.title {
@@ -67,7 +77,7 @@ body {
         height: 32px;
 
         @include tablet {
-          margin-left: 14px;
+         margin-left: 0px;
         }
         @include desktop {
           margin-left: 0px;
@@ -94,7 +104,13 @@ body {
   }
   div.loaderGif {
     width: 100%;
+@include tablet {
+    width: 4%;
+} 
 
+@include desktop {
+  width: 100%;
+}
     img {
       display: none;
       width: 50px;
@@ -104,7 +120,7 @@ body {
   div.copyrightSection {
     color: #c2c2c2;
     text-align: center;
-    margin-top: 20px;
+  //  margin-top: 20px;
     height: 45px;
 
     h2 {
@@ -163,8 +179,7 @@ body {
         color: $brand-color;
         transition: all 2s;
         display: none;
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding: 5px;
       }
     }
   }
@@ -174,7 +189,7 @@ body {
   }
 
   .select2-container--default .select2-selection--single {
-  //  height: 25px;
+  
     outline: none;
 }
 .select2-container { 

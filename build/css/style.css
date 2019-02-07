@@ -91,15 +91,24 @@ body {
     height: 90vh;
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
-    padding-top: 20px; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     @media (min-width: 600px) {
       body div.main {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; } }
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 90vh;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     body div.main div.logoContainer {
-      height: 277px;
+      height: 246px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -107,15 +116,15 @@ body {
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 44px;
-      margin-left: 3px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      margin-left: 3px; }
       @media (min-width: 600px) {
         body div.main div.logoContainer {
           height: 90%;
-          margin-left: 115px;
-          margin-top: 50px; } }
+          margin-top: 0px;
+          margin-left: 0px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
       @media (min-width: 1240px) {
         body div.main div.logoContainer {
           height: 100%;
@@ -140,23 +149,23 @@ body {
               align-items: center; }
       @media (min-width: 600px) {
         body div.main div.titleContainer {
-          -ms-flex-item-align: center;
-              align-self: center;
-          margin-top: 31px; } }
+          display: initial;
+          width: unset; } }
       @media (min-width: 1240px) {
         body div.main div.titleContainer {
           margin-top: -28px;
           margin-left: 90px;
           -webkit-box-align: normal;
               -ms-flex-align: normal;
-                  align-items: normal; } }
+                  align-items: normal;
+          width: 100%; } }
       body div.main div.titleContainer p.title {
         margin-left: 20px;
         color: #ffffff;
         height: 32px; }
         @media (min-width: 600px) {
           body div.main div.titleContainer p.title {
-            margin-left: 14px; } }
+            margin-left: 0px; } }
         @media (min-width: 1240px) {
           body div.main div.titleContainer p.title {
             margin-left: 0px; } }
@@ -181,6 +190,12 @@ body {
             margin-top: 10px; } }
   body div.loaderGif {
     width: 100%; }
+    @media (min-width: 600px) {
+      body div.loaderGif {
+        width: 4%; } }
+    @media (min-width: 1240px) {
+      body div.loaderGif {
+        width: 100%; } }
     body div.loaderGif img {
       display: none;
       width: 50px;
@@ -188,7 +203,6 @@ body {
   body div.copyrightSection {
     color: #c2c2c2;
     text-align: center;
-    margin-top: 20px;
     height: 45px; }
     @media (min-width: 600px) {
       body div.copyrightSection h2 {
@@ -237,8 +251,7 @@ body {
       -webkit-transition: all 2s;
       transition: all 2s;
       display: none;
-      padding-bottom: 10px;
-      padding-top: 10px; }
+      padding: 5px; }
   body .select2-results__option[aria-selected] {
     cursor: pointer;
     color: black; }
