@@ -11,7 +11,6 @@ body {
     flex-flow: column;
     height: 90vh;
     transition: all 1.5s;
-   // padding-top: 20px;
     justify-content: center;
   
     @include tablet {
@@ -22,25 +21,18 @@ body {
     }
 
     div.logoContainer {
-    //  height: 277px;
-    height: 246px;
+      height: 246px;
       display: flex;
       justify-content: center;
-   //  margin-top: 44px;
-      margin-left: 3px;
-      
 
       @include tablet {
         height: 90%; 
-       margin-top: 0px;
-       margin-left: 0px;
         align-items: center;
       }
 
       @include desktop {
         height: 100%;
         margin-top: 0;
-    //    margin-left: 50px;
         margin-left: 50px;
         margin-right: 80px;
       }
@@ -60,8 +52,6 @@ body {
       align-items: center;
 
       @include tablet {
-        //align-self: center;
-       // margin-top: 31px;
        display: initial;
          width: unset;
       
@@ -69,8 +59,6 @@ body {
 
       @include desktop {
         margin-top: -28px;
-       // margin-left: 90px;
-       // align-items: normal;
         width: 100%;
       }
 
@@ -87,22 +75,6 @@ body {
         }
       }
 
-      select.sectionContainer {
-        background-color: $brand-color;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-left: -19px;
-
-        @include tablet {
-          height: 22px;
-          margin-left: -12px;
-        }
-        @include desktop {
-          margin-left: -13px;
-          margin-top: 10px;
-        }
-      }
     }
   }
   div.loaderGif {
@@ -123,7 +95,6 @@ body {
   footer.copyrightSection {
     color: #c2c2c2;
     text-align: center;
-  //  margin-top: 20px;
     height: 45px;
 
     h2 {

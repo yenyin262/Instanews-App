@@ -114,13 +114,10 @@ body {
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center;
-      margin-left: 3px; }
+              justify-content: center; }
       @media (min-width: 600px) {
         body header.main div.logoContainer {
           height: 90%;
-          margin-top: 0px;
-          margin-left: 0px;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; } }
@@ -165,25 +162,6 @@ body {
         @media (min-width: 1240px) {
           body header.main nav.dropDownContainer p.title {
             margin-left: 0px; } }
-      body header.main nav.dropDownContainer select.sectionContainer {
-        background-color: #ffffff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-        margin-left: -19px; }
-        @media (min-width: 600px) {
-          body header.main nav.dropDownContainer select.sectionContainer {
-            height: 22px;
-            margin-left: -12px; } }
-        @media (min-width: 1240px) {
-          body header.main nav.dropDownContainer select.sectionContainer {
-            margin-left: -13px;
-            margin-top: 10px; } }
   body div.loaderGif {
     width: 100%; }
     @media (min-width: 600px) {
