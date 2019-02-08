@@ -78,7 +78,7 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   color: #ffffff; }
-  body div.main {
+  body header.main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,7 +95,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
     @media (min-width: 600px) {
-      body div.main {
+      body header.main {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -107,7 +107,7 @@ body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-    body div.main div.logoContainer {
+    body header.main div.logoContainer {
       height: 246px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -115,10 +115,9 @@ body {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: 44px;
       margin-left: 3px; }
       @media (min-width: 600px) {
-        body div.main div.logoContainer {
+        body header.main div.logoContainer {
           height: 90%;
           margin-top: 0px;
           margin-left: 0px;
@@ -126,16 +125,17 @@ body {
               -ms-flex-align: center;
                   align-items: center; } }
       @media (min-width: 1240px) {
-        body div.main div.logoContainer {
+        body header.main div.logoContainer {
           height: 100%;
           margin-top: 0;
-          margin-left: 50px; } }
-      body div.main div.logoContainer img {
+          margin-left: 50px;
+          margin-right: 80px; } }
+      body header.main div.logoContainer img {
         height: 226px; }
         @media (min-width: 600px) {
-          body div.main div.logoContainer img {
+          body header.main div.logoContainer img {
             height: 200px; } }
-    body div.main div.titleContainer {
+    body header.main nav.dropDownContainer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -148,28 +148,24 @@ body {
           -ms-flex-align: center;
               align-items: center; }
       @media (min-width: 600px) {
-        body div.main div.titleContainer {
+        body header.main nav.dropDownContainer {
           display: initial;
           width: unset; } }
       @media (min-width: 1240px) {
-        body div.main div.titleContainer {
+        body header.main nav.dropDownContainer {
           margin-top: -28px;
-          margin-left: 90px;
-          -webkit-box-align: normal;
-              -ms-flex-align: normal;
-                  align-items: normal;
           width: 100%; } }
-      body div.main div.titleContainer p.title {
+      body header.main nav.dropDownContainer p.title {
         margin-left: 20px;
         color: #ffffff;
         height: 32px; }
         @media (min-width: 600px) {
-          body div.main div.titleContainer p.title {
+          body header.main nav.dropDownContainer p.title {
             margin-left: 0px; } }
         @media (min-width: 1240px) {
-          body div.main div.titleContainer p.title {
+          body header.main nav.dropDownContainer p.title {
             margin-left: 0px; } }
-      body div.main div.titleContainer select.sectionContainer {
+      body header.main nav.dropDownContainer select.sectionContainer {
         background-color: #ffffff;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -181,11 +177,11 @@ body {
             align-self: center;
         margin-left: -19px; }
         @media (min-width: 600px) {
-          body div.main div.titleContainer select.sectionContainer {
+          body header.main nav.dropDownContainer select.sectionContainer {
             height: 22px;
             margin-left: -12px; } }
         @media (min-width: 1240px) {
-          body div.main div.titleContainer select.sectionContainer {
+          body header.main nav.dropDownContainer select.sectionContainer {
             margin-left: -13px;
             margin-top: 10px; } }
   body div.loaderGif {
@@ -200,48 +196,48 @@ body {
       display: none;
       width: 50px;
       height: 50px; }
-  body div.copyrightSection {
+  body footer.copyrightSection {
     color: #c2c2c2;
     text-align: center;
     height: 45px; }
     @media (min-width: 600px) {
-      body div.copyrightSection h2 {
+      body footer.copyrightSection h2 {
         margin-left: auto;
         margin-right: auto; } }
     @media (min-width: 1240px) {
-      body div.copyrightSection h2 {
+      body footer.copyrightSection h2 {
         margin-left: -78%; } }
-    body div.copyrightSection span {
+    body footer.copyrightSection span {
       text-transform: uppercase; }
   @media (min-width: 600px) {
-    body div.sectionArticleContainer {
+    body main.sectionArticleContainer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       width: 100%; } }
-  body div.sectionArticleContainer div.articleContents {
+  body main.sectionArticleContainer article.articleContents {
     height: 430px;
     background-size: cover;
     background-position: center;
     position: relative; }
     @media (min-width: 600px) {
-      body div.sectionArticleContainer div.articleContents {
+      body main.sectionArticleContainer article.articleContents {
         -ms-flex-preferred-size: 33.3%;
             flex-basis: 33.3%;
         height: 300px; } }
   @media (min-width: 600px) and (min-width: 1240px) {
-    body div.sectionArticleContainer div.articleContents {
+    body main.sectionArticleContainer article.articleContents {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
       height: 450px; } }
-    body div.sectionArticleContainer div.articleContents a {
+    body main.sectionArticleContainer article.articleContents a {
       display: block;
       height: 100%; }
-      body div.sectionArticleContainer div.articleContents a:hover p.articleTitle {
+      body main.sectionArticleContainer article.articleContents a:hover p.articleTitle {
         display: block; }
-    body div.sectionArticleContainer div.articleContents p.articleTitle {
+    body main.sectionArticleContainer article.articleContents p.articleTitle {
       position: absolute;
       line-height: 1.5;
       bottom: 0;

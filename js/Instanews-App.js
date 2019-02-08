@@ -30,14 +30,10 @@ $(function () {
                     counter = counter + 1;
                     const imageUrl = value.multimedia[4].url;
                     const articleNewsUrl = value.url;
-                    articleOption.append(`<div class="articleContents" style="background-image: url(  ${imageUrl })"> <a id="link" href =  ${articleNewsUrl}  ><p class="articleTitle">  ${value.title}  </p></a></div>`);
+                    articleOption.append(`<article class="articleContents" style="background-image: url(  ${imageUrl })"> <a id="link" href =  ${articleNewsUrl}  ><p class="articleTitle">  ${value.title}  </p></a></article>`);
                     // articleOption.append('<div class="articleContents" style="background-image: url(' + imageUrl + ')"> <a id="link" href = ' + articleNewsUrl + '><p class="articleTitle">' + value.title + '</p></a></div>');
-
                 }
-
             });
-
-
 
         }).fail(function (err) {
             throw err;
@@ -59,9 +55,9 @@ selectOption.on("change",  (event)  => {
     const logoContainer =  $('.logoContainer')
     const logo = $('.logo')
     const description = $('p.title')
-    const titleContainer = $('.titleContainer')
-    
-    const selectTitleContainer = $('.titleContainer select')
+    const dropDownContainer = $('.dropDownContainer')
+    const selectdropDownContainer = $('.dropDownContainer select')
+    const footerCopyright =  $('.copyrightSection')
 
     if ($(window).width() >= 600 && $(window).width() < 1240) {
        
@@ -87,7 +83,7 @@ selectOption.on("change",  (event)  => {
             'margin-left': '-1px',
         })
 
-        titleContainer.css({
+        dropDownContainer.css({
             'margin-top': '0px',
             'align-items': 'unset',
           'width':'unset',
@@ -96,7 +92,7 @@ selectOption.on("change",  (event)  => {
         
         })
 
-        selectTitleContainer.css({
+        selectdropDownContainer.css({
             'margin-left': '35px',
             'align-self': 'flex-start',
 
@@ -106,7 +102,7 @@ selectOption.on("change",  (event)  => {
             'margin-top': '20px',
         });
         
-        $('.copyrightSection').css({
+        footerCopyright.css({
             'margin-top': '20px',
         })
 
@@ -125,12 +121,13 @@ selectOption.on("change",  (event)  => {
 
       logoContainer.css({
             'margin-left': '50px',
+            'margin-right': '80px',
         })
-        titleContainer.css({
+        dropDownContainer.css({
             'margin-top': '-6px'
         })
 
-        selectTitleContainer.css({
+        selectdropDownContainer.css({
             'margin-left': '38px',
         })
 
@@ -139,7 +136,7 @@ selectOption.on("change",  (event)  => {
             'margin-left': '-64%',
         })
 
-        $('.copyrightSection').css({
+        footerCopyright.css({
             'margin-top': '20px',
         })
 
@@ -165,17 +162,16 @@ selectOption.on("change",  (event)  => {
            // 'height': '50vh',
         })
 
-        titleContainer.css({
+        dropDownContainer.css({
            // 'margin-top': '-20px',   
-          //  'margin-top': '20px',
-
+            'margin-top': '10px',
         })
 
         ajax.css({
             'margin-left': '180px',
         })
 
-        $('.copyrightSection').css({
+        footerCopyright .css({
             'margin-top': '20px',
         })
 

@@ -8,21 +8,17 @@
     <title>Instanews-App</title>
     <link rel="stylesheet" href="build/css/style.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-
-
 </head>
 
 <body>
 
-    <div class="main">
+    <header class="main">
         <div class="logoContainer">
             <img class="logo" src='images/nyt-logo.svg' alt='nyt-logo' />
         </div>
 
-        <div class="titleContainer">
+        <nav class="dropDownContainer">
             <p class="title">Choose a section:</p>
-
-
             <select class="sectionContainer">
                 <option value="section">Sections...</option>
                 <option value="opinion">Home</option>
@@ -50,23 +46,19 @@
                 <option value="obituaries">Obituaries</option>
                 <option value="insider">Insider</option>
             </select>
-
-
-        </div>
+        </nav>
 
         <div class="loaderGif">
             <img class="ajax" src="images/ajax-loader.gif" alt="loading...">
         </div>
+    </header>
 
-    </div>
+    <main class="sectionArticleContainer">
+    </main>
 
-    <div class="sectionArticleContainer">
-    </div>
-
-
-    <div class="copyrightSection">
+    <footer class="copyrightSection">
         <h2> © Copyright 2016 <span class="instanews">Instanews</span></h2>
-    </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

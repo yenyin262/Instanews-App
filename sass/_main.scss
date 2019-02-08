@@ -4,7 +4,8 @@ body {
   font-size: 16px;
   color: $brand-color;
 
-  div.main {
+
+  header.main {
     display: flex;
     flex-basis: 100%;
     flex-flow: column;
@@ -25,7 +26,7 @@ body {
     height: 246px;
       display: flex;
       justify-content: center;
-     margin-top: 44px;
+   //  margin-top: 44px;
       margin-left: 3px;
       
 
@@ -39,7 +40,9 @@ body {
       @include desktop {
         height: 100%;
         margin-top: 0;
+    //    margin-left: 50px;
         margin-left: 50px;
+        margin-right: 80px;
       }
 
       img {
@@ -50,7 +53,7 @@ body {
         }
       }
     }
-    div.titleContainer {
+    nav.dropDownContainer {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -66,8 +69,8 @@ body {
 
       @include desktop {
         margin-top: -28px;
-        margin-left: 90px;
-        align-items: normal;
+       // margin-left: 90px;
+       // align-items: normal;
         width: 100%;
       }
 
@@ -117,7 +120,7 @@ body {
       height: 50px;
     }
   }
-  div.copyrightSection {
+  footer.copyrightSection {
     color: #c2c2c2;
     text-align: center;
   //  margin-top: 20px;
@@ -137,14 +140,14 @@ body {
       text-transform: uppercase;
     }
   }
-  div.sectionArticleContainer {
+  main.sectionArticleContainer {
     @include tablet {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
     }
 
-    div.articleContents {
+    article.articleContents {
       height: 430px;
       background-size: cover;
       background-position: center;
