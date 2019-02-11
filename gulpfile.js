@@ -37,6 +37,7 @@
         }
     });
     gulp.watch('js/*.js', gulp.series('script', 'reload'));
+    gulp.watch('sass/*.scss', gulp.series('sass', 'reload'));
   });
 
     gulp.task('reload', function() { 
